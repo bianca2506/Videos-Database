@@ -1,0 +1,68 @@
+===============================================================================
+
+Nume: Serban Bianca-Sanziana
+Grupa: 325CA
+
+===============================================================================
+
+				Videos Database 2021
+
+===============================================================================
+
+Implementare:	
+	-> Clasele realizate de mine se gasesc in folder-ul Tema1;
+	-> Pentru structura claselor Action, Actor, User, Movie, Serial si
+	Show am folosit codul din schelet, adaugand diferite functionalitati
+	in functe de cerinta fiecarui task;
+	-> Implementarea comenzilor si a recomandarilor am efectuat-o in clasa
+	User, acestea avand la baza clasa aceasta;
+	-> In clasa Main, in metoda action, mi-am creat listele pentru 
+	utilizatori, filme si seriale, si verific ce tip de actiune primesc
+	si in fuctie de aceasta apelez metoda corespunzatoare din clasa user
+	
+===============================================================================
+	
+Comenzile:
+	-> Fiecare metoda primeste listele cu datele utile si intoarce mesajul
+	 corespunzator
+	-> Pentru comenzi am creat metodele addFavorite, addView si addRating
+	-> Metoda addFavorite
+		-> primeste ca parametru un titlu de show
+		-> il adauga in lista de favorite daca acesta e vizionat si
+		daca nu este deja in aceasta lista
+	-> Metoda addView
+		-> primeste ca parametru un titlu de show
+		-> il adauga la history daca acesta nu a mai fost vizionat
+		sau incrementeaza numarul de vizionari
+	-> Metoda addRating 
+		-> primeste o lista de filme, una de seriale, un rating, numar
+		 de sezoane si un titlu de show
+		 -> adauga rating filmelor, respectiv serialeleor
+	
+Recomandarile:
+	-> Asemanator comenzilor am creat 5 metode pentru fiecare cerinta 
+	a recomandarilor 
+	-> Metodele primesc listele cu datele utile si intorc un mesaj 
+	coresunzator
+	-> Metoda standard 
+		-> primeste o lista de filme si una de seriale 
+		-> dupa parcurgerea acestora si in functie daca utilizatorul
+		le-a mai vizionat intoarce primul show nevazut
+	-> Metoda bestUnseen
+		-> primeste o lista de filme si una de seriale 
+		-> la aceasta functie m-am folosit de un map pentru a sorta
+		in functie de rating-uri
+	-> Metoda popular
+		-> primeste o lista de filme si una de seriale 
+		-> la aceasta functie m-am folosit de un map pentru genre
+		pentru a sorta, si de o lista in care am sortat descrescator
+	-> Metoda search 
+		-> primeste o lista de filme, una de seriale si action
+		-> m-am folosit de mai multe liste pentru a sorta
+	-> Metoda favorite
+		-> primeste o lista de filme si una de seriale 
+		-> am folosit 2 liste pentru show-uri, una fiind de copy
+		pentru a sorta show-urile in functie cat de favorite sunt
+		
+===============================================================================	
+	
